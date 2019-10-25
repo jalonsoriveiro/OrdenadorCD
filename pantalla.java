@@ -6,23 +6,32 @@
 package exordenador;
 
 /**
- * Esta clase se usan los contructores y los metodos getters y setters con los 
+ * Esta clase se usan los <b>contructores</b> y los metodos getters y setters con los 
  * podemos obtener caracteriscas de las pantallas
  * @author jalonsoriveiro
  * 
  */
 public class pantalla {
     private String marca;
-    private float pulgadas;
+    private float pulgadas; 
         
-public pantalla(){
+    /**
+     *
+     */
+    public pantalla(){
 
 
 }
-public pantalla(String marca,float pulgadas){
+
+    /**
+     *
+     * @param marca modelo de la pantalla
+     * @param pulgadas cantidad de pulgadas
+     */
+    public pantalla(String marca,float pulgadas){
 
     this.marca = marca;
-    this.pulgadas = pulgadas;
+    this.pulgadas= pulgadas;
     
 }
 /**
@@ -37,7 +46,7 @@ public String getMarca(){
 }
 /**
  * Descripcion asignar una marca
- * @param marca
+ * @param marca modelo que queremos asignar a la pantalla
  */
 public void setMarca(String marca){
 
@@ -53,10 +62,9 @@ public Float getPulgadas(){
 }
 /**
  * Metodo public que nos permite dar valor a las pulgadas , el valor se pasa por parametro
- * @param pulgadas 
+ * @param pulgadas dato cantidad de pulgasdas 
  */
 public void setPulgadas(float pulgadas){
-
     this.pulgadas = pulgadas;
 }
 }
