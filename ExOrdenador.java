@@ -14,34 +14,27 @@ import java.util.Scanner;
 public class ExOrdenador {
 
     /**
-     * @param args the command line arguments
+     * Main Method, We create the objects and assign / visualize values.
+     * @param args the command line arguments 
      */
     public static void main(String[] args) {
-        
-        
+
         // TODO code application logic here
-      /*  System.out.print("Que tipo de raton es ");
+        /*  System.out.print("Que tipo de raton es ");
         Scanner sc = new Scanner(System.in);        
-        String tipo = sc.next();
-        
+        String tipo = sc.next();        
         System.out.print("Que marca es la pantalla ");
        //Scanner sc = new Scanner(System.in);        
-        String tipoPantalla = sc.next();
-        
+        String tipoPantalla = sc.next();        
         System.out.print("Pulgadas");
        //Scanner sc = new Scanner(System.in);        
-        float pulgadasPantalla = sc.nextFloat();
-        
+        float pulgadasPantalla = sc.nextFloat();        
         System.out.print("cpu velocidad");
        //Scanner sc = new Scanner(System.in);        
-        int velocidadCpu= sc.nextInt();
-        
+        int velocidadCpu= sc.nextInt();        
          System.out.print("cpu memoria");
        //Scanner sc = new Scanner(System.in);        
-        int memoriaCpu= sc.nextInt();
-        
-        
-       
+        int memoriaCpu= sc.nextInt();         
         //rato rato1 = new rato("inal");
         rato rato1 = new rato(tipo);
         pantalla pantalla1 = new pantalla(tipoPantalla,pulgadasPantalla);
@@ -50,9 +43,8 @@ public class ExOrdenador {
         ordenador ord1 = new ordenador(rato1,pantalla1,cpu1);
         ord1.amosar();                              
         /**/
-    
-    //prueba
-   /* ordenador ord2 = new ordenador();
+        //prueba
+        /* ordenador ord2 = new ordenador();
     String x=ord2.amosar1();
     
     System.out.print(x);
@@ -68,48 +60,43 @@ public class ExOrdenador {
     
      String cutString4 = x.substring(55,57);
     System.out.print("\nMemoria "+cutString4);*/
-    //prueba
-    //prueba
-    ordenador ord2 = new ordenador();
-    String x=ord2.amosar1();
-    
-    String str = new String(x);
-      int index = str.indexOf(':');  
-      index+=1;
-      int y =str.indexOf(',', index);              
-          //    System.out.print(index);
-          //  System.out.print("->"+y+"<-");
-        
-        String cutString = x.substring(index, y);
-        System.out.print("Tipo raton "+cutString);
-        
-        index =y+1;
-        int var1 =str.indexOf(':', index);
-        int var2 =str.indexOf(',', index);
-        String cutString1 = x.substring(var1,var2);
-        System.out.print("TipoPantalla "+cutString1);
-    
-    
-        index =var2+1;
-       int var3 =str.indexOf(':', index);
-       int var4 =str.indexOf(',', index);
-       String cutString2 = x.substring(var3,var4);
-       System.out.print("Pulgasdas "+cutString2);
-    
-     index =var4+1;        
-     int var6 =str.indexOf(':', index);
-     int var7 =str.indexOf(',', index);
-    String cutString3 = x.substring(var6,var7);
-    System.out.print("Velocidad "+cutString3);
-    
-    
-     index =var7+1;        
-    int var8 =str.indexOf(':', index);
-    int var9 =str.indexOf(',', index);
-    String cutString4 = x.substring(var8,var9);
-    System.out.print("Memoria "+cutString4);
+        Computer ord2 = new Computer();
+        String x = ord2.toShow();
 
+        String firstPosition = new String(x);
+        int index = firstPosition.indexOf(':');
+        index += 1;
+        int y = firstPosition.indexOf(',', index);
+        //    System.out.print(index);
+        //  System.out.print("->"+y+"<-");
+
+        String cutString = x.substring(index, y);
+        System.out.print("Tipo raton " + cutString);
+
+        index = y + 1;
+        int countScreen = firstPosition.indexOf(':', index);
+        int countScreenComa = firstPosition.indexOf(',', index);
+        String cutString1 = x.substring(countScreen, countScreenComa);
+        System.out.print("TipoPantalla " + cutString1);
+
+        index = countScreenComa + 1;
+        int countInches = firstPosition.indexOf(':', index);
+        int countInchesComa = firstPosition.indexOf(',', index);
+        String cutString2 = x.substring(countInches, countInchesComa);
+        System.out.print("Pulgasdas " + cutString2);
+
+        index = countInchesComa + 1;
+        int countSpeed = firstPosition.indexOf(':', index);
+        int countSpeedComa = firstPosition.indexOf(',', index);
+        String cutString3 = x.substring(countSpeed, countSpeedComa);
+        System.out.print("Velocidad " + cutString3);
+
+        index = countSpeedComa + 1;
+        int countMemory = firstPosition.indexOf(':', index);
+        int countMemoryComa = firstPosition.indexOf(',', index);
+        String cutString4 = x.substring(countMemory, countMemoryComa);
+        System.out.print("Memoria " + cutString4);
 
     }
-    
+
 }

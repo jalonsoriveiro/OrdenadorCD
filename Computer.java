@@ -11,53 +11,53 @@ import java.util.Scanner;
  *
  * @author jalonsoriveiro
  */
-public class ordenador {
+public class Computer {
     
-  private rato rato = new rato();
-  private pantalla pantalla = new pantalla();
-  private cpu cpu = new cpu();
+  private Rato rato = new Rato();
+  private Screen pantalla = new Screen();
+  private Cpu cpu = new Cpu();
     
 
-public ordenador(){
+public Computer(){
 }
-public ordenador(rato rato,pantalla pantalla,cpu cpu){
+public Computer(Rato rato,Screen pantalla,Cpu cpu){
 
     this.rato = rato;
     this.pantalla = pantalla;
     this.cpu = cpu;    
 }
 
-public void setRato(rato rato){
+public void setRato(Rato rato){
     this.rato = rato;
 }
-public rato getRato(){
+public Rato getRato(){
 
     return rato;
 }
-public void setPantalla(pantalla pantalla){
+public void setPantalla(Screen pantalla){
 
     this.pantalla = pantalla;
 }
-public pantalla getPantalla(){
+public Screen getPantalla(){
 
         return this.pantalla;
 }
 
-public cpu getCpu(){
+public Cpu getCpu(){
     return this.cpu;
 }
-public void setCpu(cpu cpu){
+public void setCpu(Cpu cpu){
 
     this.cpu=cpu;
 }
 
 public void amosar(){
 
-System.out.print("Tipo raton "+rato.getTipo()+"\nTipo pantalla "+pantalla.getMarca()+"\nPulgadas "+pantalla.getPulgadas()+"\nMemoria"+
-        cpu.getMemoria()+"\nVelocidad "+cpu.getVelocidade());
+System.out.print("Tipo raton "+rato.getTipo()+"\nTipo pantalla "+pantalla.getBrand()+"\nPulgadas "+pantalla.getInches()+"\nMemoria"+
+        cpu.getMemory()+"\nVelocidad "+cpu.getSpeed());
 }
 
-public String amosar1(){
+public String toShow(){
 
      System.out.print("Que tipo de raton es ");
         Scanner sc = new Scanner(System.in);        

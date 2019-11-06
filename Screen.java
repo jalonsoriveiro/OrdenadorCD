@@ -6,65 +6,58 @@
 package exordenador;
 
 /**
- * Esta clase se usan los <b>contructores</b> y los metodos getters y setters con los 
- * podemos obtener caracteriscas de las pantallas
+ * This class uses the constructors and the getters and setters methods 
+ * with the * we can obtain characteristics of the screens
  * @author jalonsoriveiro
  * 
  */
-public class pantalla {
-    private String marca;
-    private float pulgadas; 
+public class Screen {
+    private String brand;
+    private float inches; 
         
     /**
      *
      */
-    public pantalla(){
-
-
+    public Screen(){
 }
 
     /**
-     *
-     * @param marca modelo de la pantalla
-     * @param pulgadas cantidad de pulgadas
+     *Metodo constructor
+     * @param newBrand screen model
+     * @param newInches count inches
      */
-    public pantalla(String marca,float pulgadas){
-
-    this.marca = marca;
-    this.pulgadas= pulgadas;
-    
+    public Screen(String newBrand,float newInches){
+    this.brand = newBrand;
+    this.inches= newInches;   
 }
 /**
- * El metodo public String devuelve la marca de la pantalla.
- * @return Devuelve la marca
+ * The public String method returns the brand of the Screen.
+ * @return  brand
  */
-public String getMarca(){
-
-    return marca;
-
-    
+public String getBrand(){
+    return brand;    
 }
 /**
- * Descripcion asignar una marca
- * @param marca modelo que queremos asignar a la pantalla
+ * descriptions add brand
+ * @param brand model that we want to assign to the Screen
  */
-public void setMarca(String marca){
+public void setBrand(String brand){
 
-    this.marca = marca;
+    this.brand = brand;
 }
 /**
- * Descripcion metodo public que nos devuelve las pulgadas
- * @return pulgadas
+ * Descripcion public method that returns us inches
+ * @return inches  Returns the current inches
  */
-public Float getPulgadas(){
-    return pulgadas;
+public Float getInches(){
+    return inches;
 
 }
 /**
- * Metodo public que nos permite dar valor a las pulgadas , el valor se pasa por parametro
- * @param pulgadas dato cantidad de pulgasdas 
+ * Metodo public that allows us to give value to inches, the value is passed by parameter
+ * @param inches data amount of inches
  */
-public void setPulgadas(float pulgadas){
-    this.pulgadas = pulgadas;
+public void setInches(float inches){
+    this.inches = inches;
 }
 }

@@ -9,14 +9,14 @@ package exordenador;
  *
  * @author jalonsoriveiro
  */
-public class rato {
+public class Rato {
     
     private String tipo;
     
-public rato(){
+public Rato(){
 }    
     
-public rato(String tipo){
+public Rato(String tipo){
     this.tipo=tipo;
 }
 
