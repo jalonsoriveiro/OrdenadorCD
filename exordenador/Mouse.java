@@ -6,25 +6,38 @@
 package exordenador;
 
 /**
- *
+ * This class uses the constructors and the getters and setters methods 
+ * with the * we can obtain characteristics of the mouse
  * @author jalonsoriveiro
  */
-public class Rato {
+public class Mouse {
     
-    private String tipo;
-    
-public Rato(){
+    private String type;
+  /**
+   * constructor method parameterless
+   */  
+public Mouse(){
 }    
-    
-public Rato(String tipo){
-    this.tipo=tipo;
+     /**
+     * descriptions Metodo constructor
+     * @param type type of mouse
+     */
+public Mouse(String type){
+    this.type=type;
 }
-
-public String getTipo(){        
-        return tipo;
+/**
+ * descriptions public method that returns type of mouse
+ * @return  type of mouse
+ */
+public String getType(){        
+        return type;
 }
-public void setTipo(String tipo){    
- this.tipo = tipo;       
+/**
+ * descriptions public method that set type of mouse
+ * @param type new value for type of mouse
+ */
+public void setType(String type){    
+ this.type = type;       
         
 }
 }

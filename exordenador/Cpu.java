@@ -6,32 +6,57 @@
 package exordenador;
 
 /**
- *
+ * This class uses the constructors and the getters and setters methods 
+ * with the * we can obtain characteristics of the cpu
  * @author jalonsoriveiro
  */
 public class Cpu {
-    
+    /**
+     * speed initialize variable
+     * memory initialize variable
+     */
     private int speed;
     private int memory;
 
 public Cpu(){
 
 }    
-public Cpu(int velocidade,int memoria){
-    this.speed= velocidade;
-    this.memory = memoria;
+/**
+ * descriptions method Which receives two parameters that give value speed and memory
+ * @param speed
+ * @param memory 
+ */
+public Cpu(int speed,int memory){
+    this.speed= speed;
+    this.memory = memory;
 }
+/**
+ * descriptions method return value speed
+ * @return speed
+ */
 public int getSpeed(){
     return this.speed;
 }
-public void setSpeed(int velocidade){
-    this.speed = velocidade;
+/**
+ * descriptions method
+ * @param speed 
+ */
+public void setSpeed(int speed){
+    this.speed = speed;
 }
+/**
+ * descriptions return value of memory
+ * @return memory
+ */
 public int getMemory(){
     return memory;
 }
-public void setMemory(int memoria){
-    this.memory = memoria;
+/**
+ * descriptions set new value for memory
+ * @param memory new value
+ */
+public void setMemory(int memory){
+    this.memory = memory;
 }
 
 }

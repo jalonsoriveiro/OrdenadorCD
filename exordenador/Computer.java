@@ -8,55 +8,92 @@ package exordenador;
 import java.util.Scanner;
 
 /**
- *
+ * This class uses the constructors and the getters and setters methods 
+ * with the * we can obtain characteristics of the Computer
  * @author jalonsoriveiro
  */
 public class Computer {
     
-  private Rato rato = new Rato();
+  private Mouse mouse = new Mouse();
   private Screen pantalla = new Screen();
   private Cpu cpu = new Cpu();
     
-
+/**
+ **Metodo constructor parameterless
+ */
 public Computer(){
 }
-public Computer(Rato rato,Screen pantalla,Cpu cpu){
+/**
+ * constructor method parameterless
+ * @param mouse Mouse object and characteristics of the mouse class, is type in the class mouse
+ * @param screen screen object and characteristics of the screen class, is newInches and newBrand in the class mouse
+ * @param cpu cpu object and characteristics of the cpu class,is speed and memory in the class cpu
+ */
+public Computer(Mouse mouse,Screen screen,Cpu cpu){
 
-    this.rato = rato;
-    this.pantalla = pantalla;
+    this.mouse = mouse;
+    this.pantalla = screen;
     this.cpu = cpu;    
 }
-
-public void setRato(Rato rato){
-    this.rato = rato;
+/**
+ * descriptions give a new value mouse
+ * @param mouse new value for object mouse, is type in the class mouse
+ */
+public void setMouse(Mouse mouse){
+    this.mouse = mouse;
 }
-public Rato getRato(){
+/**
+ * descriptions method public return value obj mouse 
+ * @return Class Mouse
+ */
+public Mouse getMouse(){
 
-    return rato;
+    return mouse;
 }
-public void setPantalla(Screen pantalla){
+/**
+ * descriptions method public return value obj mouse 
+ * @param pantalla 
+ */
+public void setScreen(Screen pantalla){
 
     this.pantalla = pantalla;
 }
-public Screen getPantalla(){
+/**
+ * descriptions method public return value obj mouse 
+ * @return 
+ */
+public Screen getScreen(){
 
         return this.pantalla;
 }
-
+/**
+ * descriptions method public return value obj mouse 
+ * @return 
+ */
 public Cpu getCpu(){
     return this.cpu;
 }
+/**
+ * descriptions method public return value obj mouse 
+ * @param cpu 
+ */
 public void setCpu(Cpu cpu){
 
     this.cpu=cpu;
 }
+/**
+ * descriptions method public return value obj mouse 
+ * 
+ */
+public void show(){
 
-public void amosar(){
-
-System.out.print("Tipo raton "+rato.getTipo()+"\nTipo pantalla "+pantalla.getBrand()+"\nPulgadas "+pantalla.getInches()+"\nMemoria"+
+System.out.print("Tipo raton "+mouse.getType()+"\nTipo pantalla "+pantalla.getBrand()+"\nPulgadas "+pantalla.getInches()+"\nMemoria"+
         cpu.getMemory()+"\nVelocidad "+cpu.getSpeed());
 }
-
+/**
+ * descriptions method public return value obj mouse 
+ * @return 
+ */
 public String toShow(){
 
      System.out.print("Que tipo de raton es ");

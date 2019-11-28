@@ -5,8 +5,6 @@
  */
 package exordenador;
 
-import java.util.Scanner;
-
 /**
  *
  * @author jalonsoriveiro
@@ -41,7 +39,7 @@ public class ExOrdenador {
         cpu cpu1 = new cpu(velocidadCpu,memoriaCpu);
         
         ordenador ord1 = new ordenador(rato1,pantalla1,cpu1);
-        ord1.amosar();                              
+        ord1.show();                              
         /**/
         //prueba
         /* ordenador ord2 = new ordenador();

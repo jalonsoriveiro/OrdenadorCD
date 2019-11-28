@@ -16,7 +16,7 @@ public class Screen {
     private float inches; 
         
     /**
-     *
+     *constructor method
      */
     public Screen(){
 }
