@@ -75,7 +75,7 @@ public Cpu getCpu(){
 }
 /**
  * descriptions method public return value obj mouse 
- * @param cpu 
+ * @param cpu new value for cpu
  */
 public void setCpu(Cpu cpu){
 
@@ -98,8 +98,7 @@ public String toShow(){
 
      System.out.print("Que tipo de raton es ");
         Scanner sc = new Scanner(System.in);        
-        String tipo = sc.next();
-        
+        String tipo = sc.next();        
         System.out.print("Que marca es la pantalla ");
        //Scanner sc = new Scanner(System.in);        
         String tipoPantalla = sc.next();
